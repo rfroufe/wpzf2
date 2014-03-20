@@ -18,7 +18,7 @@ return array(
 				),
 				'dsn'       => 'mysql:dbname=wpzf2;host=localhost',
 				'database'  => 'wpzf2',
-				'username'  => 'php',
+				'username'  => 'root',
 				'password'  => '1234',
 				'hostname'  => 'localhost',
 				 
@@ -32,7 +32,7 @@ return array(
 								),
 								'dsn'       => 'mysql:dbname=wpzf2;host=localhost',
 								'database'  => 'wpzf2',
-								'username'  => 'php',
+								'username'  => 'root',
 								'password'  => '1234',
 								'hostname'  => 'localhost',
 						),
@@ -45,7 +45,7 @@ return array(
 									),
 									'dsn'       => 'mysql:dbname=wpzf2;host=localhost',
 									'database'  => 'wpzf2',
-									'username'  => 'php',
+									'username'  => 'root',
 									'password'  => '1234',
 									'hostname'  => 'localhost',
 							));

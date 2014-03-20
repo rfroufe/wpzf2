@@ -9,4 +9,8 @@ return array(
 			'label' => 'Task',
 			'route' => 'task',
 	),
+	array(
+			'label' => 'Cheetara',
+			'route' => 'cheetara',
+	),		
 );

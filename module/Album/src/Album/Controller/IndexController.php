@@ -64,6 +64,11 @@ class IndexController extends AbstractActionController
              ));
          }
 
+         $resp = $this->getRestResponse(sprintf("http://wpzf2.local/album-rest/%s"),$id);
+         $respData = Json::decode($resp->getBody());
+         
+         
+         
          // Get the Album with the specified id.  An exception is thrown
          // if it cannot be found, in which case go to the index page.
          try {

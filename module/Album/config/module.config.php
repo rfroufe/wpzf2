@@ -18,7 +18,30 @@ return array(
 									),
 							),
 					),
-					
+					'album-rest' => array(
+							'type'    => 'segment',
+							'options' => array(
+									'route'    => '/album-rest[/:id]',
+									'constraints' => array(		
+											'id'     => '[0-9]+',
+									),
+									'defaults' => array(
+											'controller' => 'Album\Controller\Rest',								
+									),
+							),
+					),	
+					'album-client' => array(
+							'type'    => 'segment',
+							'options' => array(
+									'route'    => '/album-client[/:id]',
+									'constraints' => array(
+											'id'     => '[0-9]+',
+									),
+									'defaults' => array(
+											'controller' => 'Album\Controller\Client',
+									),
+							),
+					),														
 			),
 			
 	),
@@ -27,6 +50,8 @@ return array(
 	'controllers' => array(
 			'invokables' => array(
 					'Album\Controller\Index' 		=> 'Album\Controller\IndexController',
+					'Album\Controller\Rest' 		=> 'Album\Controller\RestController',
+					'Album\Controller\Client' 		=> 'Album\Controller\ClientController',
 					
 			),
 	),
@@ -37,6 +62,9 @@ return array(
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
+        ),
+    	'strategies' => array(
+        	'ViewJsonStrategy',
         ),
     ),
     // Placeholder for console routes
